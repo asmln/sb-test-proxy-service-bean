@@ -10,8 +10,7 @@ import org.springframework.stereotype.Service;
 public class UserService {
     String name;
 
-    //fields omitted
-    @Cacheable(value = "user", key = "#name")  //once added, the name will be null.
+    @Cacheable(value = "user", key = "#name")
     public User getUser(String name) {
         System.out.println("--- user creation. this.name = " + this.name);
         return new User(name);
