@@ -3,7 +3,10 @@ package com.example.test;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
-//@Service
+// @Service conflicts with @Bean (TestApplication.userService(...))
+// and Spring reports that "The bean 'userService', defined in com.example.test.TestApplication, could not be registered."
+// properties spring.main.allow-bean-definition-overriding=true fix this problem, but better to remove annotation @Service
+@Service
 public class UserService {
     String name;
 
