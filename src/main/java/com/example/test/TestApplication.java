@@ -15,7 +15,7 @@ public class TestApplication implements CommandLineRunner {
 	private UserService userService;
 
 	@Bean
-	public UserService UserService(UserServiceBuilder builder, ConfigBean configBean) {
+	public UserService userService(UserServiceBuilder builder, ConfigBean configBean) {
 		return builder.build(configBean);
 	}
 
