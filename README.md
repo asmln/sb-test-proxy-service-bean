@@ -2,7 +2,7 @@
 
 Spring-boot example application.
 
-Bean-builder, proxy (by @Cacheable annotaion), access by field/getter, @Service-@Bean conflict.
+Bean-builder, proxy (by @Cacheable annotation), access by field/getter, @Service-@Bean conflict.
 
 For stackoverflow answer: https://stackoverflow.com/a/53675272/6240251
 
